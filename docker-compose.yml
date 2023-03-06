@@ -3,10 +3,10 @@ services:
   web:
     build: .
     volumes:
-      - /Users/jwozniak/praca/projekty/carq_scrapper_aws:/home/hosting
+      - /Users/jwozniak/praca/projekty/lambda_aws:/home/hosting
       - /Users/jwozniak/.ssh:/home/hosting/.ssh
-      - scrapper_rvm:/home/hosting/.rvm
+      - lambda_rvm:/home/hosting/.rvm
     stdin_open: true
     tty: true
 volumes:
-  scrapper_rvm:
+  lambdas_rvm:

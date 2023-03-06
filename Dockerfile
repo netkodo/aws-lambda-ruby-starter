@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 as carq_scrapper
+FROM ubuntu:22.04
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update
 RUN apt install -y awscli wget zip git curl patch gawk g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev \
