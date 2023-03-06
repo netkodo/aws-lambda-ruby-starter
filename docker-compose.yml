@@ -9,4 +9,4 @@ services:
     stdin_open: true
     tty: true
 volumes:
-  lambdas_rvm:
+  lambda_rvm:
