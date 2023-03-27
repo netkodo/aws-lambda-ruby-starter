@@ -3,8 +3,8 @@ services:
   web:
     build: .
     volumes:
-      - /Users/jwozniak/praca/projekty/lambda_aws:/home/hosting
-      - /Users/jwozniak/.ssh:/home/hosting/.ssh
+      - ./lambda_aws:/home/hosting
+      - ~/.ssh:/home/hosting/.ssh
       - lambda_rvm:/home/hosting/.rvm
     stdin_open: true
     tty: true
